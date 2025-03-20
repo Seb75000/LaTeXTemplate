@@ -1,0 +1,100 @@
+%
+% Cheatsheet de balises utiles
+%
+
+% retours chariot 
+\medskip
+\bigskip
+
+% Listes imbriquées
+\begin{itemize}
+   \item First level item
+   \item First level item
+   \begin{itemize}
+     \item Second level item
+     \item Second level item
+     \begin{itemize}
+       \item Third level item
+       \item Third level item
+       \begin{itemize}
+         \item Fourth level item
+         \item Fourth level item
+       \end{itemize}
+     \end{itemize}
+   \end{itemize}
+ \end{itemize}
+
+ 
+% Citation
+\footcite{loremIpsum}
+
+% Pipe
+\texttt{\char`\|}
+
+% Les guillemets français. Tellement plus classe que les double quotes !
+« »
+«»
+
+{\&}
+\textunderscore{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% insertion d'image
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{Images/10/lorem.png}
+    \caption{Schéma d'un logo Lorem}
+    \label{fig:Lorem}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Boite grise
+\begin{shadebox}
+Blablabla
+\end{shadebox}
+
+\begin{center}
+\begin{tcolorbox}[colback=gray!10,
+                  colframe=gray!50,
+                  width=0.9\textwidth,
+                  title=Remarque
+                 ]
+blabla                 
+\end{tcolorbox}
+\end{center}
+
+\begin{center}
+                  width=0.9\textwidth,
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{verbatim}
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+\end{verbatim}
+
+% Utiliser la fonte Courier pour un paragraphe spécifique
+\ttfamily
+Ceci est un paragraphe en fonte Courier. La fonte Courier est souvent utilisée pour afficher du code ou des exemples de texte monospacé.
+\normalfont
+
+% Utiliser la fonte Courier pour un mot spécifique
+Ceci est un exemple de texte normal, et voici un mot en \texttt{Courier}.
+
+% Insérer du YAML
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{lstlisting}[language=yaml, basicstyle=\ttfamily, frame=single]
+global:
+  backupDirectory: '/home/myuser/yamlFiles'
+  # blablalbal
+  logFilePath: '/var/log/soft/logs.txt'
+  noSslWarning: True
+\end{lstlisting}
+
+
